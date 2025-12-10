@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WanderWay - Your complete travel companion. Plan, book, and explore with our intelligent travel platform trusted by over 2 million travelers worldwide.">
+    <meta name="keywords" content="travel planning, trip planner, vacation booking, travel app, itinerary">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="WanderWay - Travel. Simplified.">
+    <meta property="og:description" content="Plan your perfect journey with our AI-powered travel platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wanderway.com">
+
+    <title>WanderWay - Travel. Simplified.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+
+<body>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p>We use cookies to enhance your experience. By continuing, you agree to our <a href="#privacy">Privacy
+                Policy</a>.</p>
+        <button class="btn btn-primary btn-sm" id="acceptCookies">Accept</button>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <span class="logo-icon">✈️</span>
+                    <span class="logo-text">WanderWay</span>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta">
+                    <!-- Theme Toggle Button -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                    </button>
+                    <a href="#signup" class="btn btn-outline">Sign up</a>
+                    <a href="#login" class="btn btn-primary">Log in</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
+                alt="Beautiful tropical beach destination" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content animate-fade-up">
+                <div class="hero-badge">
+                    <span class="badge badge-accent">FREE 14 DAY TRIAL</span>
+                </div>
+                <h1 class="hero-title">
+                    <span>Plan your</span>
+                    <span class="text-gradient">perfect</span>
+                    <span>journey</span>
+                </h1>
+                <p class="hero-subtitle">The trusted choice of travelers and adventurers across 150+ countries</p>
+                <div class="hero-text">
+                    <p>Save hours planning your next adventure with our intelligent travel platform. From finding the
+                        best flights to crafting personalized itineraries, we handle the logistics so you can focus on
+                        the experience.</p>
+                    <p>Experience seamless coordination for solo trips or group adventures. Our smart recommendations
+                        ensure you never miss hidden gems while traveling.</p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#how-it-works" class="btn btn-primary btn-lg">
+                        <span>See how it works</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#demo" class="btn btn-ghost btn-lg">Watch Demo</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-up delay-200">
+                <div class="hero-card">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80"
+                        alt="Traveler exploring beautiful destinations" class="hero-card-img">
+                    <div class="hero-card-badge">
+                        <span class="pulse"></span>
+                        <span>2M+ Travelers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#social-proof" class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Social Proof & Email Capture Section -->
+    <section class="social-proof" id="social-proof">
+        <div class="container">
+            <div class="social-proof-grid">
+                <div class="social-proof-content animate-fade-up">
+                    <span class="section-label">WanderWay</span>
+                    <h2 class="section-title">Travel. <span class="text-gradient">Redefined.</span></h2>
+                    <p class="section-description">Optimize your travel planning with our cutting-edge platform
+                        featuring an intuitive dashboard to enhance your journey experience.</p>
+
+                    <div class="feature-callout">
+                        <div class="feature-callout-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <div class="feature-callout-content">
+                            <span class="badge badge-primary">AI-Enhanced</span>
+                            <p>Experience advanced automation with intelligent algorithms for personalized
+                                recommendations and streamlined trip planning.</p>
+                        </div>
+                    </div>
+
+                    <div class="community-stat">
+                        <p>Become part of the thousands of travelers exploring together and achieving their best
+                            adventures with WanderWay.</p>
+                        <div class="stat-highlight">
+                            <span class="stat-number" data-count="2000000">0</span>
+                            <span class="stat-label">travelers and counting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="email-capture animate-fade-up delay-200">
+                    <div class="email-capture-card">
+                        <h3>Start your journey today</h3>
+                        <p>Maximize your travel experiences and save time with our revolutionary platform.</p>
+                        <form class="email-form" id="emailForm">
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <button type="submit" class="btn btn-primary">
+                                    Sign up for FREE
+                                </button>
+                            </div>
+                            <p class="form-note">No credit card required. Cancel anytime.</p>
+                        </form>
+                        <div class="trust-badges">
+                            <div class="trust-badge">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                                <span>256-bit SSL</span>
+                            </div>
+                            <div class="trust-badge">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>GDPR Compliant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="key-features" id="features">
+        <div class="container">
+            <div class="section-header animate-fade-up">
+                <span class="section-label">Features</span>
+                <h2 class="section-title">Everything you need for <span class="text-gradient">unforgettable
+                        journeys</span></h2>
+                <p class="section-description">Core capabilities and ways to accelerate your travel planning with our
+                    comprehensive suite of tools designed for modern adventurers.</p>
+            </div>
+
+            <div class="integration-callout animate-fade-up">
+                <div class="integration-icons">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=60&h=60&fit=crop"
+                        alt="Flight integration" class="integration-icon">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=60&h=60&fit=crop"
+                        alt="Hotel integration" class="integration-icon">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=60&h=60&fit=crop"
+                        alt="City integration" class="integration-icon">
+                    <span class="integration-more">+200</span>
+                </div>
+                <p>Explore <strong>200+ integrations</strong> with airlines, hotels, and booking platforms for limitless
+                    customization and enhanced functionality</p>
+                <a href="#integrations" class="link-arrow">
+                    Read more traveler stories
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-fade-up">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">Helping adventurous travelers <span class="text-gradient">explore better,
+                        daily</span></h2>
+                <p class="section-description">Trusted by travelers from leading companies worldwide</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-fade-up">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <blockquote>
+                            "We planned our entire European adventure in just 15 minutes, enabling our family to focus
+                            on the experience rather than logistics. Choosing WanderWay for our travels was a
+                            no-brainer."
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                            alt="Peter Johanson" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <strong>Peter Johanson</strong>
+                            <span>CEO of NordTech Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-fade-up delay-100">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <blockquote>
+                            "Our team found planning company retreats with WanderWay incredibly enjoyable, making
+                            coordination effortless and engaging. The positive impact on our travel experience was
+                            evident from day one."
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face"
+                            alt="Isabella Martínez-Ruiz" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <strong>Isabella Martínez-Ruiz</strong>
+                            <span>CTO of LunaBelle Cosmetics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-fade-up delay-200">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <blockquote>
+                            "Our team handled complex international travel arrangements using WanderWay. It enabled us
+                            to manage bookings and communications seamlessly across 12 different time zones."
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+                            alt="Richard Ko" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <strong>Richard Ko</strong>
+                            <span>PM at Kroger</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid Section -->
+    <section class="features-grid-section" id="capabilities">
+        <div class="container">
+            <div class="section-header animate-fade-up">
+                <span class="section-label">Capabilities</span>
+                <h2 class="section-title">Powerful tools for <span class="text-gradient">seamless adventures</span></h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animate-fade-up">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>Travel Optimization</h3>
+                    <p>Achieve the perfect itinerary using intelligent route planning and smart efficiency tools for
+                        your adventures.</p>
+                </div>
+
+                <div class="feature-card animate-fade-up delay-100">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                        </svg>
+                    </div>
+                    <h3>Seamless Integrations</h3>
+                    <p>Seamlessly connect your favorite booking platforms and travel tools with our intelligent,
+                        hassle-free integration solutions.</p>
+                </div>
+
+                <div class="feature-card animate-fade-up delay-200">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                    </div>
+                    <h3>Trip History</h3>
+                    <p>Get access to past travel insights with comprehensive historical data for informed planning and
+                        nostalgic reminiscing.</p>
+                </div>
+
+                <div class="feature-card animate-fade-up">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>We're here for you around the clock with reliable 24/7 support, ensuring your travel needs are
+                        met anytime, anywhere.</p>
+                </div>
+
+                <div class="feature-card animate-fade-up delay-100">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3>Community Plugins</h3>
+                    <p>Enhance your travel experience with community-driven plugins, expanding functionality and
+                        customization options.</p>
+                </div>
+
+                <div class="feature-card animate-fade-up delay-200">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z" />
+                            <path d="M12 16v-4" />
+                            <path d="M12 8h.01" />
+                        </svg>
+                    </div>
+                    <h3>Smart Suggestions</h3>
+                    <p>Receive personalized destination and activity recommendations based on your preferences and
+                        travel history.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Callout Section -->
+    <section class="pricing-callout" id="pricing">
+        <div class="container">
+            <div class="pricing-callout-content animate-fade-up">
+                <div class="pricing-text">
+                    <h2 class="section-title">Flexible plans that <span class="text-gradient">adapt to your needs</span>
+                    </h2>
+                    <p>Check out personalized pricing designed around your unique travel style, ensuring you get the
+                        best value.</p>
+                </div>
+                <a href="#pricing-page" class="btn btn-primary btn-lg">
+                    Go to Pricing
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Pillars Section -->
+    <section class="pillars" id="about">
+        <div class="container">
+            <div class="section-header animate-fade-up">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">Your complete <span class="text-gradient">travel companion</span></h2>
+                <p class="section-description">Explore our innovative solutions designed to revolutionize your travel
+                    experience and kickstart your journey's success.</p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card animate-fade-up">
+                    <div class="pillar-icon">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=120&h=120&fit=crop"
+                            alt="Planning illustration">
+                    </div>
+                    <h3>Plan</h3>
+                    <p>Create detailed itineraries with smart suggestions and collaborative planning tools.</p>
+                    <a href="#plan" class="link-arrow">
+                        Learn how to plan
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="pillar-card animate-fade-up delay-100">
+                    <div class="pillar-icon">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=120&h=120&fit=crop"
+                            alt="Booking illustration">
+                    </div>
+                    <h3>Book</h3>
+                    <p>Secure the best deals on flights, hotels, and experiences with our unified booking system.</p>
+                    <a href="#book" class="link-arrow">
+                        Learn how to book
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="pillar-card animate-fade-up delay-200">
+                    <div class="pillar-icon">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=120&h=120&fit=crop"
+                            alt="Explore illustration">
+                    </div>
+                    <h3>Explore</h3>
+                    <p>Discover hidden gems and local experiences with personalized recommendations.</p>
+                    <a href="#explore" class="link-arrow">
+                        Learn how to explore
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="pillar-card animate-fade-up delay-300">
+                    <div class="pillar-icon">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=120&h=120&fit=crop"
+                            alt="Share illustration">
+                    </div>
+                    <h3>Share</h3>
+                    <p>Document your adventures and share memories with friends and the community.</p>
+                    <a href="#share" class="link-arrow">
+                        Learn how to share
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-cta">
+                    <a href="#signup" class="btn btn-primary">Try for free</a>
+                </div>
+                <div class="footer-links-top">
+                    <a href="#support">Customer Support</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#payments">Payments</a>
+                    <a href="#redeem">Redeem Code</a>
+                    <a href="#edu">Educational & NPOs</a>
+                    <a href="#corporate">Corporate</a>
+                    <a href="#about">About Us</a>
+                </div>
+                <div class="footer-cta">
+                    <a href="#signup" class="btn btn-outline">Try for free</a>
+                </div>
+            </div>
+
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">✈️</span>
+                        <span class="logo-text">WanderWay</span>
+                    </a>
+                    <p>Your complete travel companion for planning, booking, and exploring the world.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none"
+                                    stroke="currentColor" stroke-width="2" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Apps & Integrations</a></li>
+                            <li><a href="#">Developer Platform</a></li>
+                            <li><a href="#">WanderWay for iOS</a></li>
+                            <li><a href="#">WanderWay for Android</a></li>
+                            <li><a href="#">Enterprise</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Changelog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">What's new</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Travel Guides</a></li>
+                            <li><a href="#">Destination Database</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Business</h4>
+                        <ul>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span>Available Worldwide</span>
+                </div>
+                <p class="copyright">© 2024 WanderWay. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#terms" id="privacy">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
